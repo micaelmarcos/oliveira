@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mercado Livre Brasil - Frete Grátis no mesmo dia</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript">
+		//setTimeout(function(){
+   		//window.location.reload(1);
+		//}, 1000);
+
+		function ativar_menu() {
+			document.getElementById('lista-itens').style.display = "flex";
+			document.getElementById('reorder').style.display = "none";
+			document.getElementById('fechar_menu').style.display = "flex";
+		}
+
+		function desativar_menu() {
+			document.getElementById('lista-itens').style.display = "none";
+			document.getElementById('reorder').style.display = "flex";
+			document.getElementById('fechar_menu').style.display = "none";
+		}
+	</script>
+
+
+
+</head>
+<body>    
+	<div id="topo">        <!-- formatacao do menu superior dividodos em duas divs -->
+		<div id="topo1">
+			<img id="logotipo" src="imagens/mercadolivre.jpg">
+			<img id="logotipo-resp" src="imagens/logotipo-resp.png">
+				<form id="search">
+					<input id="input_de_pesquisa" type="text" placeholder="Buscar produtos, marcas e muito mais">
+					<input id="input_enviar_pesquisa" type="submit" name="" value="">
+				</form>
+	
+			<img id="level6" src="imagens/icons/level6.webp">
+			<img onclick="ativar_menu()" id="reorder" ="reorder" src="imagens/reorder.png">
+			<img onclick="desativar_menu()" class="reorder" id="fechar_menu" src="imagens/icons/fechar.png">
+			<img id="icone_carrinho" src="imagens/icons/icone_carrinho.png">
+		</div>
+
+
+		<div id="topo2">
+			<a href="">
+				<div id="local">
+					<img id="geo" src="imagens/icons/geo.png">
+					<p>Informe seu cep</p>
+
+				</div>
+			</a>
+			<div id="lista-itens">
+				<div id="menu-top">
+					<img src="imagens/icons/userlogo.png">
+						<div style="display: block;">
+							<h3>Bem-vindo</h3><br>
+							<p>Entre na sua conta para ver suas compras, favoritos etc.</p>
+						</div>
+				</div>
+				<form>
+					<input id="botao_entrar" type="button" name="" value="Entre">
+					<input id="botao_criar_conta" type="button" name="" value="Crie a sua conta">
+				</form>
+				<ol>
+					<a href=""><li>Categorias</li></a>
+					<a href=""><li>Ofertas do dia</li></a>
+					<a href=""><li>Historico</li></a>
+					<hr>
+					<a href=""><li>Supermercado</li></a>
+					<a href=""><li>Moda</li></a>
+					<a href=""><li>Live</li></a>
+					<a href=""><li>Vender</li></a>
+					<a href=""><li>Contato</li></a>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!--<div id="one">
+		<div class="two">
+			<img src="imagens/logosite.png">
+		</div>
+		<div class="two">
+			<img src="imagens/logosite.png"> 
+		</div>
+		<div class="two">
+			<img src="imagens/logosite.png">
+		</div>
+		<div class="two">
+			<img src="imagens/logosite.png">
+		</div>
+		<div class="two" id="quemuda1">
+			<img src="imagens/quemuda2.png">
+		</div>
+		<div class="two" id="quemuda2">
+			<img src="imagens/quemuda.png">
+		</div>
+	-->
+	</div>  
+</body>
+</html>
